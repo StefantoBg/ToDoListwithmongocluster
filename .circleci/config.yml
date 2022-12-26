@@ -8,7 +8,7 @@ jobs:
           password: $DOCKERHUB_PASSWORD  # context / project UI env-var reference
     steps:
       - run:
-          name: The First Step
-          command: |
+          name: App start 
+          command: node app.js
             echo 'Hello World!'
             echo 'This is the delivery pipeline'
